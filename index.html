@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background-image: url('background.jpg'); /* Ganti dengan nama file gambar kamu */
+            background-size: cover; /* Menyesuaikan gambar dengan ukuran header */
+            background-position: center; /* Memusatkan gambar */
+            color: white; /* Warna teks */
+            text-align: center; /* Rata tengah teks */
+            padding: 100px 0; /* Memberi ruang di atas dan bawah */
+        }
+
+        .btn {
+            background-color: #007bff; /* Warna tombol */
+            color: white; /* Warna teks tombol */
+            padding: 10px 20px; /* Ukuran tombol */
+            text-decoration: none; /* Menghapus garis bawah */
+            border-radius: 5px; /* Menambah sudut tombol */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Warna saat hover */
+        }
+    </style>
+
+    <!-- Home Section -->
+    <header class="hero">
+        <h1>Indra Rofiyadi</h1>
+        <p>Web Developer | Software Engineer</p>
+        <a href="#projects" class="btn">Lihat Selengkapnya</a>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Node.js</li>
+                <li>Laravel</li>
+                <li>ARDUINO IDE</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Proyek</h2>
+            <div class="project">
+                <img src="assets/images/project1-image.jpg" alt="Proyek 1">
+                <h3>Proyek 1</h3>
+                <p>Deskripsi singkat proyek ini.</p>
+                <a href="projects/project1/index.html" class="btn-secondary">Lihat Selengkapnya</a>
+            </div>
+            <div class="project">
+                <img src="assets/images/project2-image.jpg" alt="Proyek 2">
+                <h3>Proyek 2</h3>
+                <p>Deskripsi singkat proyek ini.</p>
+                <a href="projects/project2/index.html" class="btn-secondary">Lihat Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <!-- <section id="experience" class="experience">
+        <div class="container">
+            <h2>Pengalaman Kerja</h2>
+            <ul>
+                <li><strong>Company A</strong> - Web Developer (2020-2022)</li>
+                <li><strong>Company B</strong> - Software Engineer (2018-2020)</li>
+            </ul>
+        </div>
+    </section> -->
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Pendidikan</h2>
+            <ul>
+                <li>Sarjana Teknik Informatika - Universitas Islam Madura (2020-2024)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Saya</h2>
+            <form action="send-email.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
